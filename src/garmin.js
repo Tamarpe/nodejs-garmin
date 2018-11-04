@@ -16,6 +16,7 @@ var activities = function(res, parameters) {
         if (!error && response.statusCode == 200) {
             var info = JSON.parse(body);
             var result = [];
+            var entries = [];
 
             info.activityList.forEach(function(activity) {
                 var date = new Date(activity.beginTimestamp);
@@ -40,8 +41,6 @@ var activities = function(res, parameters) {
                 result[date].distance += Number(activity.distance / 1000);
             });
 
-
-            var entries = [];
             for (var key in result) {
                 var entry = new Object();
                 entry.date = key;
