@@ -6,7 +6,7 @@ app.set('view engine', 'ejs')
 
 var activities = function(res, parameters) {
     var options = {
-        url:  'https://connect.garmin.com/proxy/activitylist-service/activities/' + parameters.email + '?start=1&limit=99',
+        url:  'https://connect.garmin.com/proxy/activitylist-service/activities/' + parameters.username + '?start=1&limit=1000',
         headers: {
             'User-Agent': 'request'
         }
