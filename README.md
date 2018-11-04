@@ -1,4 +1,4 @@
-# Project to access & sum up Garmin Connect data
+# Access & sum up your Garmin Connect data
 
 ## Install
 
