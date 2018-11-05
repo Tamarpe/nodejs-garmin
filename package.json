@@ -7,8 +7,11 @@
     "start": "nodemon src/server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Tamar Peled",
+    "email": "tamarpe@gmail.com",
+  }
+  "license": "MIT",
   "dependencies": {
     "cookie-parser": "^1.4.3",
     "csurf": "^1.9.0",
